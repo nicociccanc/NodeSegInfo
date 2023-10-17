@@ -1,0 +1,9 @@
+Instalaciones:
+npm init --yes
+
+
+npm install express mysql express-handlebars express-myconnection express-session body-parser
+
+npm install nodemon -> PRUBAS DE DESARROLLO
+
+npm install bcrypt

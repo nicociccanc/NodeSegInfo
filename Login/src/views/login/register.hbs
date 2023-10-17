@@ -1,0 +1,72 @@
+<style>
+  /* Estilos de la consola (del primer formulario) */
+  .console {
+    background-color: #111;
+    color: #000;
+    font-family: monospace;
+    padding: 20px;
+    border: 1px solid #4f4e4e;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+/* Estilo para el botón (cambiar a color negro) */
+  .console button {
+    background-color: #222;
+    color: #555;
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .console button:hover {
+    background-color: #111;
+  }
+
+  /* Estilo para campos de entrada (del primer formulario) */
+  .console input[type="text"],
+  .console input[type="password"],
+  .console input[type="email"] {
+  background-color: #090909;
+    color: #939292;
+    border: 1px solid #828282;
+    border-radius: 4px;
+    padding: 10px;
+    margin: 5px 0;
+    width: 100%;
+  }
+
+  
+</style>
+
+<div class="mt-16">
+    <div class="mx-auto p-5 console">
+            <h1 class="text-3xl font-bold text-center mb-4" style="color: white;">REGISTER</h1>
+
+            <form action="" method="POST" class="mt-4">
+            <input type="text" name="name" placeholder="Name" required>
+
+            <input type="email" name="email" placeholder="Email" required/>
+
+            <input type="password" name="password" placeholder="Password" required/>
+
+            <div class="text-center my-3">
+                <button
+                type="submit"
+                class="bg-white w-20 h-10 text-black text-base font-semibold hover:bg-gray-300 focus:bg-gray-200">Send
+                </button>
+            </div>
+
+            {{#if error}}
+            <p class="text-red-500 font-bold text-lg my-3">{{error}}</p>
+            {{/if}}
+            </form>
+    </div>
+</div>
+//generar rol admim, users
+//get de los usuarios creados solo con rol admin
